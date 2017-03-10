@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kittipat.beacon.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IBeacon"
+        android:textSize="30dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/txtIBeacon"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_toRightOf="@+id/txtIBeacon"
+        android:textSize="30dp"
+        android:id="@+id/txtRssIBeacon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignBaseline="@+id/txtIBeacon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EddyStone"
+        android:textSize="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/txtIBeacon"
+        android:id="@+id/txtEddyStone"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_toRightOf="@+id/txtEddyStone"
+        android:textSize="30dp"
+        android:id="@+id/txtRssEddyStone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtRssIBeacon"
+        android:layout_alignBaseline="@+id/txtEddyStone"/>
+
+
+</RelativeLayout>

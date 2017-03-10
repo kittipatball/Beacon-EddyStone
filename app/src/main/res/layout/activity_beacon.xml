@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IBeacon"
+            android:textSize="20sp"
+            android:id="@+id/IBeacon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IBeacon"
+            android:text="UUID :"
+            android:id="@+id/HeadUUID"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadUUID"
+            android:text="N/A"
+            android:id="@+id/txtUUID"
+            android:layout_toRightOf="@+id/HeadUUID"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HeadUUID"
+            android:text="MacAddress :"
+            android:id="@+id/IBeaconMacAddress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/IBeaconMacAddress"
+            android:text="N/A"
+            android:id="@+id/txtIBeaconMacAddress"
+            android:layout_toRightOf="@+id/IBeaconMacAddress"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IBeaconMacAddress"
+            android:text="MeasuredPower :"
+            android:id="@+id/HeadMeasuredPower"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadMeasuredPower"
+            android:text="N/A"
+            android:id="@+id/txtMeasuredPower"
+            android:layout_toRightOf="@+id/HeadMeasuredPower"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HeadMeasuredPower"
+            android:text="ProximityUUID :"
+            android:id="@+id/HeadProximityUUID"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadProximityUUID"
+            android:text="N/A"
+            android:id="@+id/txtProximityUUID"
+            android:layout_toRightOf="@+id/HeadProximityUUID"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HeadProximityUUID"
+            android:id="@+id/HeadRssi"
+            android:text="RSSI :"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadRssi"
+            android:text="N/A"
+            android:id="@+id/txtRssi"
+            android:layout_toRightOf="@+id/HeadRssi"
+            android:layout_marginStart="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EddyStone"
+            android:textSize="20dp"
+            android:id="@+id/txtEddyStone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEddyStone"
+            android:text="Namespace ID :"
+            android:id="@+id/HeadEddyStoneID"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadEddyStoneID"
+            android:text="N/A"
+            android:id="@+id/txtNamespaceId"
+            android:layout_toRightOf="@+id/HeadEddyStoneID"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HeadEddyStoneID"
+            android:text="MacAddress :"
+            android:id="@+id/headMacAddress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/headMacAddress"
+            android:text="N/A"
+            android:id="@+id/txtMacAddress"
+            android:layout_toRightOf="@+id/HeadEddyStoneID"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headMacAddress"
+            android:text="CalibratedTxPower :"
+            android:id="@+id/HeadCalibratedTxPower"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadCalibratedTxPower"
+            android:text="N/A"
+            android:id="@+id/txtCalibratedTxPower"
+            android:layout_toRightOf="@+id/HeadCalibratedTxPower"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HeadCalibratedTxPower"
+            android:text="DescribeContents :"
+            android:id="@+id/HeadDescribeContents"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadDescribeContents"
+            android:text="N/A"
+            android:id="@+id/txtDescribeContents"
+            android:layout_toRightOf="@+id/HeadDescribeContents"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HeadDescribeContents"
+            android:text="RSSI :"
+            android:id="@+id/HeadEddyStoneRSSI"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeadEddyStoneRSSI"
+            android:text="N/A"
+            android:id="@+id/txtEddyStoneRSSI"
+            android:layout_toRightOf="@+id/HeadEddyStoneRSSI"
+            android:layout_marginStart="20dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
