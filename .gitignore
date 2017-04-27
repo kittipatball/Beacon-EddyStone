@@ -6,3 +6,6 @@
 /build
 /captures
 .externalNativeBuild
+
+.idea/instapk.xml
+instapk.log*
